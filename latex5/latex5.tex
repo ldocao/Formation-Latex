@@ -1,0 +1,67 @@
+\documentclass[a4paper]{report}
+
+%%PACKAGES
+\usepackage[margin=2in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+
+\usepackage{amssymb} %symboles additionnels
+\usepackage{amsmath} %ameliorations rendus des formules mathematiques
+
+
+
+\begin{document}
+
+Formation \LaTeX, 4ème vidéo
+
+Ceci est ma première équation $a=1$ avec la méthode dollars.
+
+Ceci est ma première équation a=1 avec la méthode dollars.
+
+Une lettre grecque $\alpha=1$ au milieu du texte.
+
+Je vais écrire ma deuxème équation
+
+\begin{equation}
+c=3
+\end{equation}
+
+%%à ne pas faire
+%\begin{center}
+%c=3
+%\end{center}
+
+
+\begin{equation}
+x_{0}^{2n}
+\end{equation}
+
+Vous pouvez omettre les symboles accolades
+
+\begin{equation}
+x_0^{2n}
+\end{equation}
+
+
+Cela ne marche pas avec plusieurs caractères dans l'accolade
+
+\begin{equation}
+x_0^2n
+\end{equation}
+
+On peut introduire des espaces insécables $L=3~ \rm cm$. Le nombre d'espaces importe peu $\gamma =          2 Hz$.
+
+Il existe beaucoup d'autres commandes similaires pour afficher en roman
+
+\begin{equation}
+\cos\alpha +\sin\beta = \exp a + \log b
+\end{equation}
+
+Une dernière commande utile :
+
+\begin{equation}
+\frac{a}{b}\cos\alpha=\frac{2\frac{4}{5}}{3}
+\end{equation}
+
+
+\end{document}
