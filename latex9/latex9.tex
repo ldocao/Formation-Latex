@@ -1,0 +1,32 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%placer vos nouvelles commandes ici
+\newcommand{\comA}{\sin\theta + \cos\theta}
+\newcommand{\comB}[1]{\sin #1 + \cos #1}
+\newcommand{\comC}[2]{\sin #1 + \cos #2}
+
+%renewcommand
+%providecommand
+
+\begin{document}
+
+Bonjour et bienvenue dans la dernière vidéo consacrée à \LaTeX !
+
+\begin{equation}
+  \comA
+\end{equation}
+
+\begin{equation}
+  \comB{\alpha} + \comB{\beta}
+\end{equation}
+
+\begin{equation}
+  \comC{\gamma}{\delta}
+\end{equation}
+
+\end{document}
