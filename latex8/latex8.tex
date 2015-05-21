@@ -3,29 +3,35 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphics}
 \usepackage{pdfpages}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.5in]{geometry}
 \usepackage[francais]{babel}
 \usepackage{hyperref}
 
+
+\usepackage{graphics}
+\usepackage{pdfpages}
+
 \begin{document}
 
-\listoffigures
-\section{Screencastmint c'est ...}
-Screencastmint est un site qui a pour but de partager et favoriser l'échange entre passionnés d'informatique. À ce titre, tout le monde a la possibilité d'apprendre ou d'apporter ses connaissances via le forum ou les screencasts. Je fais référence à l'image \ref{image1}
 
+\listoffigures
+
+
+\section{Screencastmint c'est ...}
+Screencastmint est un site qui a pour but de partager et favoriser l'échange entre passionnés d'informatique. À ce titre, tout le monde a la possibilité d'apprendre ou d'apporter ses connaissances via le forum ou les screencasts. Je fais référence à l'image \ref{image1}.
+
+\begin{figure}[h]
+  \begin{flushright}
+    \includegraphics[width=0.5\textwidth]{./image1.jpg}
+    \caption{Logo de screencastmint}
+    \label{image1}
+  \end{flushright}
+\end{figure}
 
 \section{Pourquoi partager mes connaissances}
 J'ai commencé mon apprentissage du web un peu par hasard après mes études d'art appliqués. À cette époque, je n'avais que des notions très vagues de HTML et CSS que j'avais pratiqué de façon récréative. Afin de réaliser un projet personnel, je me suis mis à approfondir mes connaissances grâce à plusieurs acteurs du partage de connaissances comme Grafikart et Openclassroom (encore sdz à cette époque).
 
 Ainsi j'ai eu cette chance de bénéficier d'un apprentissage gratuit de qualité et il est maintenant temps pour moi d'apporter ma pierre à l'édifice !
-
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./image1.jpg}
-\caption{Logo de screencastmint}
-\label{image1}
-\end{center}
-\end{figure}
 
 
 
@@ -34,21 +40,15 @@ Ma première motivation était d'apporter au web en réponse à mon apprentissag
 
 Enfin sachez que partager ses connaissances aide à approfondir son savoir en plus d'être une source de motivation supplémentaire pour découvrir des nouvelles technologies !  
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./image2.jpg}
-\caption{Ceci est une deuxième image}
-\label{image2}
-\end{center}
+
+\begin{figure}
+\includegraphics{image2.jpg}
+\caption{Ceci est un deuxième logo.}
 \end{figure}
 
-
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=0.5\textwidth]{./image3.jpg}
-\caption[Logo avec des cerveaux]{Ceci est la dernière image mais avec un caption qui est particulièrement long parce qu'il y a beaucoup de choses à expliquer.}
-\label{image3}
-\end{center}
+\begin{figure}
+\includegraphics{image3.jpg}
+\caption[Logo avec des cerveaux]{Ceci est une troisième image mais avec une très longue description car il y a beaucoup de choses à dire à propos de cette image.}
 \end{figure}
 
 \end{document}
